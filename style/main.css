@@ -1,0 +1,164 @@
+.item1 {
+  grid-area: header;
+  margin: 15px;
+}
+.logo{
+  padding-right: 31px;
+}
+.item2 {
+  grid-area: menu;
+}
+.item3 {
+  grid-area: main;
+  margin: 15px;
+}
+.item4 {
+  grid-area: right;
+  margin: 15px;
+}
+.item5 {
+  grid-area: footer;
+  margin: 15px;
+  padding-bottom: 5px;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "menu header header header header header"
+    "menu main main main main right"
+    "menu footer footer footer footer footer";
+  gap: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  /*padding: 10px;*/
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin: 20px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.grid-container > .item2 {
+  background-color: RGB(45, 53, 68);
+  padding: 20px 5px 20px 15px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: white;
+}
+.foto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 100%;
+}
+aside {
+  float: right;
+  margin-right: 15px;
+}
+#diagram {
+  width: 100%;
+  width: 207px;
+}
+.logo {
+  width: 100%;
+  max-width: 30px;
+  float: left;
+  height: auto;
+  margin-right: 2px;
+}
+.linkedin {
+  color: white;
+}
+/* mouse over link */
+.linkedin:hover {
+  color: hotpink;
+}
+.grid-container > .item4 {
+  border-left: 1px solid grey;
+  padding: 5px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  margin: 0 auto;
+}
+
+
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .grid-container > .item2 {
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+  }
+  
+  #diagram {
+    width: 150px;
+  }
+  .grid-container > .item4 {
+    border-left: 0px;
+    padding: 5px;
+  }
+  
+  .grid-container {
+    margin: 8px;
+    display: grid;
+    grid-template-areas:
+      "header"
+      "menu"
+      "main"
+      "right"
+      "footer";
+  }
+  .grid-container {
+    display: block;
+  }
+  table {
+    display: block;
+  }
+
+  /* Set both headers and data cells to display as blocks */
+  td {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Hide the first header cell */
+
+  /* Show the second header cell before each data cell */
+  td:nth-child(2)::before {
+    content: attr(data-label);
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .nama {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+@media only screen and (min-device-width: 621px) and (max-device-width: 1250px) {
+  
+  .grid-container {
+    grid-template-areas:
+      "menu header header header header header"
+      "menu main main main main main"
+      "menu right right right right right"
+      "menu footer footer footer footer footer";
+    margin: 8px;
+    column-gap: 15px;
+  }
+  #diagram {
+    width: 160px;
+  }
+  .grid-container > .item4 {
+    border-left: 0px;
+    padding: 5px;
+  }
+}
+
+

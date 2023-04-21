@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="style/signup.css">
+      <link rel="stylesheet" href="style/styles.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+      <div class="nametag">
+         <h2>Student ID : 2023708837</h2>
+         <h2>Name : Muhammad Haikal Rahman</h2>
+         <h2>Class Group : CSX-USU</h2>
+      </div>
+      <div class="topnav" id="myTopnav">
+         <div class="logo">
+            <img src="images/logo-01.png" alt="logo">
+         </div>
+         <a href="main.html" >Resume</a>
+         <a href="projects.html">Projects</a>
+         <a href="about.html">Biography</a>
+         <a href="time_table.html">Time Table</a>
+         <a href="gallery.html">Gallery</a>
+         <a href="download.html">Download</a>
+         <a href="#" class="active">Log In</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+           <i class="fa fa-bars"></i>
+         </a>
+       </div>
+       <div class="grid-container">
+        <div class="item1">
+            <h1 class="nama">Registration Form</h1>
+        </div>
+        <div class="item3">
+            <form id="registration-form">
+                <div>
+                  <label for="first-name">First Name *</label>
+                  <input type="text" id="first-name" required>
+                </div>
+                <div>
+                  <label for="last-name">Last Name *</label>
+                  <input type="text" id="last-name" required>
+                </div>
+                <div>
+                  <label>Gender *</label>
+                  <label for="male">
+                    <input type="radio" id="male" name="gender" value="male" required>Male
+                  </label>
+                  <label for="female">
+                    <input type="radio" id="female" name="gender" value="female" required>Female
+                  </label>
+                </div>
+                <div>
+                  <label for="address-1">Address 1 *</label>
+                  <input type="text" id="address-1" required>
+                </div>
+                <div>
+                  <label for="address-2">Address 2</label>
+                  <input type="text" id="address-2">
+                </div>
+                <div>
+                  <label for="city">City *</label>
+                  <input type="text" id="city" required>
+                </div>
+                <div>
+                  <label for="state">State *</label>
+                  <select id="state" required>
+                    <option value="">Select State</option>
+                    <option value="perlis">Perlis</option>
+                    <option value="kedah">Kedah</option>
+                    <option value="p-pinang">P. Pinang</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="phone-number">Phone Number *</label>
+                  <input type="tel" id="phone-number" required>
+                </div>
+                <div>
+                  <label for="email-address">Email Address *</label>
+                  <input type="email" id="email-address" required>
+                </div>
+                <div>
+                  <label>Educational Background *</label>
+                  <label for="spmd">
+                    <input type="checkbox" id="spmd" name="education" value="SPM">SPM
+                  </label>
+                  <label for="diploma">
+                    <input type="checkbox" id="diploma" name="education" value="Diploma">Diploma
+                  </label>
+                  <label for="degree">
+                    <input type="checkbox" id="degree" name="education" value="Degree">Degree
+                  </label>
+                  <label for="master">
+                    <input type="checkbox" id="master" name="education" value="Master">Master
+                  </label>
+                  <label for="phd">
+                    <input type="checkbox" id="phd" name="education" value="PhD">PhD
+                  </label>
+                </div>
+                <div>
+                  <label for="user-name">User Name *</label>
+                  <input type="text" id="user-name" required>
+                </div>
+                <div>
+                  <label for="password">Password *</label>
+                  <input type="password" id="password" required>
+                </div>
+                <div>
+                  <label for="re-enter-password">Re-enter Password *</label>
+                  <input type="password" id="re-enter-password" required>
+                </div>
+                <div class="buttons">
+                  <button type="submit" id="submit">Submit</button>
+                  <button type="reset">Clear</button>
+                  <button type="button" onclick="window.location.href='index.html'">Cancel</button>
+                  
+                    </div>
+                  </form>
+        </div>
+        <div class="item5">
+            <p style="color:gray;">Jl M NAWI HRP GG MUKMIN NO 2-A,Medan,Indonesia, 202216  (+62)-821-6963-9537 muhammadhaikalrahman81@gmail.com</p>
+        </div>
+       </div>
+    </body>
+    <script src="script/navbar.js"></script>
+</html>

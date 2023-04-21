@@ -1,0 +1,133 @@
+.item1 {
+    grid-area: header;
+    margin: 15px;
+  }
+  .nama {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .item3 {
+    grid-area: main;
+    margin: 15px;
+  }
+  .item5 {
+    grid-area: footer;
+    margin: 15px;
+    padding-bottom: 5px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "main "
+      "footer ";
+    gap: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /*padding: 10px;*/
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin: 20px;
+  }
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .grid-container > .item2 {
+    background-color: RGB(45, 53, 68);
+    padding: 20px 5px 20px 15px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: white;
+  }
+  @media only screen and (max-width: 620px) {
+    .grid-container > .item2 {
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0px;
+      }
+      .grid-container > .item4 {
+        border-left: 0px;
+        padding: 5px;
+      }
+      .grid-container {
+        margin: 8px;
+      }
+      .grid-container {
+        display: block;
+      }
+    }
+    @media only screen and (min-device-width: 621px) and (max-device-width: 1250px) {
+      .grid-container {
+        margin: 8px;
+      }
+    }
+
+
+    form {
+        width: 400px;
+        margin: auto;
+      }
+      
+      
+      div {
+        margin: 10px 0;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      
+      input[type="text"],
+      input[type="tel"],
+      input[type="email"],
+      input[type="password"],
+      select {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      
+      input[type="radio"],
+      input[type="checkbox"] {
+        margin-right: 5px;
+      }
+      
+      .buttons {
+        text-align: center;
+        margin-top: 20px;
+      }
+      
+      .buttons button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .buttons button:not(:last-child) {
+        margin-right: 10px;
+      }
+      
+      button[type="submit"] {
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+      }
+      
+      button[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+      
+      button[type="button"] {
+        background-color: #f44336;
+        color: #fff;
+        border: none;
+      }
+      
+      button[type="button"]:hover {
+        background-color: #e60000;
+      }
+      
