@@ -30,9 +30,6 @@ submitButton.addEventListener('click', () => {
         alert("LOGIN SUCCESS")
         form.submit();
     }
-    else {
-        alert("ID / password WAS WRONG")
-    }
 });
 
 function validateForm() {
@@ -40,7 +37,7 @@ function validateForm() {
         return true;
     }
     else {
-        alert("ID / password salah");
+        alert("ID / password WAS WRONG");
         return false;
     }
 }
