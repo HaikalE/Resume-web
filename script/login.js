@@ -27,11 +27,11 @@ form.addEventListener('reset', (event) => {
 
 submitButton.addEventListener('click', () => {
     if (validateForm()==true){
-        alert("Anda berhasil login")
+        alert("LOGIN SUCCESS")
         form.submit();
     }
     else {
-        alert("ID / password salah")
+        alert("ID / password WAS WRONG")
     }
 });
 
